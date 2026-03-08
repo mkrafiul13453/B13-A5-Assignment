@@ -33,7 +33,36 @@
 </head>
 
 <body>
-
+    <div class="min-h-screen max-w-sm bg-base-200 mx-auto space-y-4">
+        <div class="flex justify-center pt-16 ">
+            <img src="./assets/github-logo.png" alt="">
+        </div>
+        <h1 class="text-center text-2xl font-bold">GitHub Issues Tracker</h1>
+        <h1 class="text-center text-gray-400">Sign in to manage your issues</h1>
+    
+        <div class="flex justify-center items-center ">
+            <fieldset class="fieldset bg-base-200 w-full  p-4 space-y-4">
+    
+                <label class="label w-full">Username</label>
+                <input id="input-username" type="text" class="input w-full rounded-2xl" placeholder="Enter Username" />
+                <label class="label">Password</label>
+                <input id="input-password" type="password" class="input w-full rounded-2xl" placeholder="Enter Password" />
+    
+                <button id="login-btn" class="btn btn-soft btn-primary mt-4 w-full rounded-2xl">Login</button>
+            </fieldset>
+        </div>
+    
+        <div class="mt-16">
+            <h1 class="text-gray-400 text-center">Demo Credentials:</h1>
+            <h1 class="text-center font-semibold">Username: admin</h1>
+            <h1 class="text-center font-semibold">Password: admin123</h1>
+        </div>
+    </div>
+    
+    
+    
+    <!-- Added JS file  -->
+    <script src="./script/login.js"></script>
 </body>
 
 </html>
