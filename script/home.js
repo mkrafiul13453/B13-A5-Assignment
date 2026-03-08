@@ -8,3 +8,14 @@ async function loadIssues() {
     allIssues = data.data;
     displayIssues(allIssues);
 }
+
+function displayIssues(issues) {
+    const issueCountElement = document.getElementById("issue-count");
+    issueCountElement.innerText = issues.length;
+
+    cardContainer.innerHTML = "";
+
+    if (issues.length === 0) {
+        cardContainer.innerHTML = "<p class='text-center col-span-4 py-10'>No issues found!</p>";
+        return;
+    };
